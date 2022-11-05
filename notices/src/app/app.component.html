@@ -1,0 +1,36 @@
+<body>
+  <header class="alinhaCentro">
+    <h1>Exibindo resultado de busca por "Covid 19"</h1>
+    <p>Encontramos um total de 20 resultados para a sua busca</p>
+  </header>
+  <div class="content">
+    <section class="box1" >
+        <div class="card" *ngFor="let dado of dados">
+          <div class="img"></div>
+          <div class="texts">
+            <h4>{{dado.title}}</h4>
+            <p class="texto">
+              {{dado.body}}
+            </p>
+            <p class="texto-mais">Ler mais</p>
+          </div>
+        </div>
+    </section>
+    <section class="box2">
+      <div class="categorias">
+          <h4>Categorias</h4>
+          <p>Lorem ipsum dolor</p>
+          <hr>
+          <p>Lorem ipsum dolor</p>
+          <hr>
+          <p>Lorem ipsum dolor</p>
+          <hr>
+          <p>Lorem ipsum dolor</p>
+      </div>
+      <div>
+          <h4 class="pesquisa">Procurando alguma notícia?</h4>
+          <input value placeholder="Pesquisar por..." type="search">
+      </div>
+    </section>
+  </div>
+</body>
